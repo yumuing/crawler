@@ -12,12 +12,16 @@
 自行准备好运行环境，如下：
 + 启动MongDB服务以及Redis服务
 + 安装依赖
-+ 运行 proxy_pool 开源库：随机ip
++ 运行 proxy_pool 开源库：[jhao104/proxy_pool: Python爬虫代理IP池(proxy pool) (github.com)](https://github.com/jhao104/proxy_pool) 获取随机ip
 
 运行顺序：
 + 爬取数据（爬取数据.py）：共729个武汉房源数据
 + 可视化(可视化.py)：武汉各类型房源占比饼状图、武汉地区房价水平柱形图
 + 热力图(toTxt.py)：往add.txt写入所有房源经纬度，自行写入到thermalMap.html要求位置，运行该html即可获得热力图
+
+### 可视化结果
+
+![MongDB房源数据详情](C:\code\github\profile\crawler\README.assets\wzgr5aW1kYcV9Jo.png)
 
 ![热力图](https://s2.loli.net/2023/05/10/D1GMOwenoyX9cbf.png)
 
