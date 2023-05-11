@@ -111,7 +111,7 @@ User Agent 中文名为用户代理，简称 UA，它是一个特殊字符串头
 
 而fake-useragent库中就多种浏览器的请求头，当我们需要爬虫的时候，仅仅只需要调用一下这个库就可以使用了。
 
-本次项目所使用的请求头库如图所示：![](C:\code\github\profile\crawler\README.assets\PGSoLVO31Dhn5yJ.png)
+本次项目所使用的请求头库如图所示：![](https://s2.loli.net/2023/05/12/QGWX6Jv29aABsgP.png)
 
 ## 3.4mongodb模块简介
 
@@ -151,21 +151,21 @@ MongoDB是一个介于关系数据库和非关系数据库之间的产品，是�
 
 ### 4.1.1整体网页分析
 
-该网站显示有729个房源![](C:\code\github\profile\crawler\README.assets\bcInABm9kWzvwpC.png)
+该网站显示有729个房源![](https://s2.loli.net/2023/05/12/LmSZjJlONYD5VFP.png)
 
-实则在第47页已查询不到新房![](C:\code\github\profile\crawler\README.assets\wliaYSdkVDIHoEF.png)
+实则在第47页已查询不到新房![](https://s2.loli.net/2023/05/12/5PlLNEezXT1jBUv.png)
 
-故在爬取过程中，只爬取47页![](C:\code\github\profile\crawler\README.assets\XOrHDFLG1TUnz8K.png)
+故在爬取过程中，只爬取47页![](https://s2.loli.net/2023/05/12/arbjixGtJVNgwvs.png)
 
 ### 4.1.2分析所爬取网页标签格式
 
 本次爬取网站为武汉的链家网站，我们可以利用浏览器的开发者工具来帮助我们快速找到要爬取的信息所在标签,只需按f12，点击箭头所指的按钮，选择想要获取的信息，浏览器就能快速找到信息所在标签
 
-![](C:\code\github\profile\crawler\README.assets\DASOmWXwVsZgIcy.png)![](C:\code\github\profile\crawler\README.assets\iwYDZzmFoyj4PHR.png)![](C:\code\github\profile\crawler\README.assets\x1C7ad4LOPbDzVo.png)
+![](https://s2.loli.net/2023/05/12/5gxv36yLIYEDGwq.png)![](https://s2.loli.net/2023/05/12/UgNyBJX5j9dh4lo.png)![](https://s2.loli.net/2023/05/12/nYKp6bXWfmUJwxk.png)
 
 我们需要的数据有地区名，房子平米数，房源价格等信息，通过网页检查可以看到相关的网页标签，从检查中，我们可以知道，所有的房源数据都在一个ul标签里面，属性是“class=resblock-list-wrapper”,那么接着往下可以找到想要获取的楼盘区域，需要获取ul下li里面的a标签内容，如下：
 
-![](C:\code\github\profile\crawler\README.assets\8QcBL5Cd9EwiHve.png)
+![](https://s2.loli.net/2023/05/12/wBlfIjXmt8vqnC5.png)
 
 同理，我们可以找到其他所需要的房源信息所在的标签，这样就可以通过相关代码爬取所需要的信息了。
 
@@ -173,44 +173,44 @@ MongoDB是一个介于关系数据库和非关系数据库之间的产品，是�
 
 1.  导库
 
-![](C:\code\github\profile\crawler\README.assets\c6qVIlMHmbRptDL.png)
+![](https://s2.loli.net/2023/05/12/jtMrHfy83qgCmAx.png)
 
-1.  设置随机请求头和ip遍历网页数据，利用xpath技术和正则表达爬取所需要的数据![](C:\code\github\profile\crawler\README.assets\BWlcmaoKG4xRwsA.png)![](C:\code\github\profile\crawler\README.assets\p8gMm4jqcRIfPUW.png)![](C:\code\github\profile\crawler\README.assets\k92XqbQfV4eDrzB.png)![](C:\code\github\profile\crawler\README.assets\SlboEfiTXqc2vpg.png)
-2.  其中利用到一点防反爬，每个分页睡眠30-35秒，每次页内遍历一次睡眠0-5秒![](C:\code\github\profile\crawler\README.assets\24uBWDOMC7jlXFt.png)
-3.  将爬取的数据存储在mongodb中![](C:\code\github\profile\crawler\README.assets\hMQRKXr9YD36dzn.png)
+1.  设置随机请求头和ip遍历网页数据，利用xpath技术和正则表达爬取所需要的数据![](https://s2.loli.net/2023/05/12/ndkJCVHurvTsKgi.png)![](https://s2.loli.net/2023/05/12/BepKEMyLCduZHFT.png)![](https://s2.loli.net/2023/05/12/wG7inju1HoCIpzv.png)![](https://s2.loli.net/2023/05/12/kfEiuPgYqaXGUIL.png)
+2.  其中利用到一点防反爬，每个分页睡眠30-35秒，每次页内遍历一次睡眠0-5秒![](https://s2.loli.net/2023/05/12/qiaYs8oDN5KnWSZ.png)
+3.  将爬取的数据存储在mongodb中![](https://s2.loli.net/2023/05/12/LkznYFXHM8ZExgi.png)
 
 ## 4.2数据处理
 
 ### 4.2.1利用mongodb可视化工具查看房源数据
 
-![](C:\code\github\profile\crawler\README.assets\n4vcg2W1LzMhjVt.png)
+![](https://s2.loli.net/2023/05/12/WreyvInaYxQ651p.png)
 
 ### 4.2.2对房源数据进行聚合管道处理
 
-![](C:\code\github\profile\crawler\README.assets\42FpY68Kq9aZ5Mz.png)
+![](https://s2.loli.net/2023/05/12/7BPnIQxe9ROoLZa.png)
 
 ### 4.2.3将处理完的数据通过饼状图和柱状图进行可视化
 
-代码如下![](C:\code\github\profile\crawler\README.assets\SgWZtizsf6dQMhF.png)
+代码如下![](https://s2.loli.net/2023/05/12/WaJ1M4o5wSRI3Hf.png)
 
-![](C:\code\github\profile\crawler\README.assets\8mjXebv9JPtU3LV.png)![](C:\code\github\profile\crawler\README.assets\UgBSToziK6r8QAY.png)
+![](https://s2.loli.net/2023/05/12/lqzU2pO67XJmdoy.png)![](https://s2.loli.net/2023/05/12/waZmNVxAy4RSQFC.png)
 
-武汉各类型房源占比饼状图：![](C:\code\github\profile\crawler\README.assets\HiDVECb1z2dLWB4.png)
+武汉各类型房源占比饼状图：![](https://s2.loli.net/2023/05/12/VkQoe4W9Z5Dt8Fh.png)
 
-武汉地区房价水平柱形图：![](C:\code\github\profile\crawler\README.assets\NVDFe1XPRaZxIsm.png)
+武汉地区房价水平柱形图：![](https://s2.loli.net/2023/05/12/fNyDCrn2iTzhHv7.png)
 
 ## 4.3百度热力图
 
 ### 4.3.1导库并连接数据库
 
-![](C:\code\github\profile\crawler\README.assets\Cem6NTsGHMBc8aq.png)
+![](https://s2.loli.net/2023/05/12/jb9EtfWLvqC5O7r.png)
 
-**4.3.2对数据进行聚合处理并将经纬度存储在txt文档中**![](C:\code\github\profile\crawler\README.assets\ERk2Tugf571sije.png)
+**4.3.2对数据进行聚合处理并将经纬度存储在txt文档中**![](https://s2.loli.net/2023/05/12/NQFSqIMHlhTkEGy.png)
 
-![](C:\code\github\profile\crawler\README.assets\QnPSTHLRUjOdtNg.png)
+![](https://s2.loli.net/2023/05/12/5uDJ6Ai3ogkKUtF.png)
 
 ### 4.3.3将经纬度写入thermalMap.html要求位置，运行热力图
 
-![](C:\code\github\profile\crawler\README.assets\nuk4bWCDMHd6E3T.png)
+![](https://s2.loli.net/2023/05/12/9BnDAHQGxXlyNTU.png)
 
-源码如图所示![](C:\code\github\profile\crawler\README.assets\vxTR4OwQSu9IYZi.png)![](C:\code\github\profile\crawler\README.assets\qfM2iDjGy6I8cFm.png)![](C:\code\github\profile\crawler\README.assets\yT4x7qAdzIcEL9p.png)
+源码如图所示![](https://s2.loli.net/2023/05/12/xv2EI5BiDYKgHLO.png)![](https://s2.loli.net/2023/05/12/WYxhjH4MKzOPgJp.png)![](https://s2.loli.net/2023/05/12/XefsTb1ir8NYEHo.png)
