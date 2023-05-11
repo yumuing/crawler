@@ -21,7 +21,7 @@
 
 ### 可视化结果
 
-![MongDB房源数据详情](C:\code\github\profile\crawler\README.assets\wzgr5aW1kYcV9Jo.png)
+![MongDB房源数据详情](https://s2.loli.net/2023/05/11/ez3DKhiuvGOsSJ5.png)
 
 ![热力图](https://s2.loli.net/2023/05/10/D1GMOwenoyX9cbf.png)
 
