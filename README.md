@@ -219,4 +219,6 @@ MongoDB是一个介于关系数据库和非关系数据库之间的产品，是�
 
 ![](https://s2.loli.net/2023/05/12/9BnDAHQGxXlyNTU.png)
 
-源码如图所示![](https://s2.loli.net/2023/05/12/xv2EI5BiDYKgHLO.png)![](https://s2.loli.net/2023/05/12/WYxhjH4MKzOPgJp.png)![](https://s2.loli.net/2023/05/12/XefsTb1ir8NYEHo.png)
+源码如图所示：ak 不可用，请自行在百度开发平台申请密钥进行热力图生成
+
+![](https://s2.loli.net/2023/05/12/xv2EI5BiDYKgHLO.png)![](https://s2.loli.net/2023/05/12/WYxhjH4MKzOPgJp.png)![](https://s2.loli.net/2023/05/12/XefsTb1ir8NYEHo.png)
