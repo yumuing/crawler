@@ -21,13 +21,13 @@
 
 ### 可视化结果
 
-![MongDB房源数据详情](https://s2.loli.net/2023/05/11/ez3DKhiuvGOsSJ5.png)
+![MongDB房源数据详情](可视化结果/MongDB%E6%88%BF%E6%BA%90%E6%95%B0%E6%8D%AE%E8%AF%A6%E6%83%85.png)
 
-![热力图](https://s2.loli.net/2023/05/10/D1GMOwenoyX9cbf.png)
+![热力图](可视化结果/热力图.png)
 
-![武汉地区房价水平柱形图](https://s2.loli.net/2023/05/10/6pBlOaVK7CbTmSM.png)
+![武汉地区房价水平柱形图](可视化结果/武汉地区房价水平柱形图.png)
 
-![武汉各类型房源占比饼状图](https://s2.loli.net/2023/05/10/B8yW4TuELlaGS1c.png)
+![武汉各类型房源占比饼状图](可视化结果/武汉各类型房源占比饼状图.png)
 
 # 一、前言
 
